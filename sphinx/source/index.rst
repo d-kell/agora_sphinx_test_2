@@ -1,10 +1,10 @@
-.. Agora_test documentation master file, created by
-   sphinx-quickstart on Sun Jul 26 14:34:16 2020.
+.. Agora documentation master file, created by
+   sphinx-quickstart on Sun Jul 26 15:41:39 2020.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Agora_test's documentation!
-======================================
+Welcome to Agora's documentation!
+=================================
 
 .. toctree::
    :maxdepth: 2
