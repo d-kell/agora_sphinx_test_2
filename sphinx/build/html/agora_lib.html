@@ -1,0 +1,1556 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agora_lib package &#8212; Agora 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="agora_lib" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="agora-lib-package">
+<h1>agora_lib package<a class="headerlink" href="#agora-lib-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-agora_lib.agora">
+<span id="agora-lib-agora-module"></span><h2>agora_lib.agora module<a class="headerlink" href="#module-agora_lib.agora" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="agora_lib.agora.Agora">
+<em class="property">class </em><code class="sig-prename descclassname">agora_lib.agora.</code><code class="sig-name descname">Agora</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_dir</span></em>, <em class="sig-param"><span class="n">file_dir_test</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">remove_out_Tr</span></em>, <em class="sig-param"><span class="n">remove_out_Val</span></em>, <em class="sig-param"><span class="n">rep_corr</span></em>, <em class="sig-param"><span class="n">average</span></em>, <em class="sig-param"><span class="n">read_err</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt id="agora_lib.agora.Agora.all_train_outlrs">
+<code class="sig-name descname">all_train_outlrs</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.agora.Agora.all_train_outlrs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora.Agora.all_val_outlrs">
+<code class="sig-name descname">all_val_outlrs</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.agora.Agora.all_val_outlrs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora.Agora.attrs">
+<code class="sig-name descname">attrs</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.agora.Agora.attrs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.create_model">
+<code class="sig-name descname">create_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">attr</span></em>, <em class="sig-param"><span class="n">model_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.create_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.email_pdf">
+<code class="sig-name descname">email_pdf</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.email_pdf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.get_pipeline">
+<code class="sig-name descname">get_pipeline</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">attr</span></em>, <em class="sig-param"><span class="n">model_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.get_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.get_pipelines">
+<code class="sig-name descname">get_pipelines</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.get_pipelines" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.load_data">
+<code class="sig-name descname">load_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">excel_dir</span></em>, <em class="sig-param"><span class="n">raw_spec_dir</span></em>, <em class="sig-param"><span class="n">outl_dir</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">remove_out</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">load_req</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">read_err</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.load_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.load_dfs">
+<code class="sig-name descname">load_dfs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.load_dfs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.merge_by_attr">
+<code class="sig-name descname">merge_by_attr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">merged_df</span></em>, <em class="sig-param"><span class="n">attr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.merge_by_attr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.merge_data">
+<code class="sig-name descname">merge_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X_df</span></em>, <em class="sig-param"><span class="n">Y_df</span></em>, <em class="sig-param"><span class="n">X_valid</span></em>, <em class="sig-param"><span class="n">Y_valid</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.merge_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.prep_data">
+<code class="sig-name descname">prep_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.prep_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.prep_matrices">
+<code class="sig-name descname">prep_matrices</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">attr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.prep_matrices" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora.Agora.ranked_train_outlrs">
+<code class="sig-name descname">ranked_train_outlrs</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.agora.Agora.ranked_train_outlrs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora.Agora.ranked_val_outlrs">
+<code class="sig-name descname">ranked_val_outlrs</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.agora.Agora.ranked_val_outlrs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora.Agora.req_df">
+<code class="sig-name descname">req_df</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.agora.Agora.req_df" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.save_agora">
+<code class="sig-name descname">save_agora</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.save_agora" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.save_object">
+<code class="sig-name descname">save_object</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj</span></em>, <em class="sig-param"><span class="n">name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.save_object" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora.Agora.stop">
+<code class="sig-name descname">stop</code><em class="property"> = False</em><a class="headerlink" href="#agora_lib.agora.Agora.stop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.tr_data_check">
+<code class="sig-name descname">tr_data_check</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_train</span></em>, <em class="sig-param"><span class="n">y_train</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.tr_data_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora.Agora.val_data_check">
+<code class="sig-name descname">val_data_check</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_train</span></em>, <em class="sig-param"><span class="n">y_train</span></em>, <em class="sig-param"><span class="n">x_test</span></em>, <em class="sig-param"><span class="n">y_test</span></em>, <em class="sig-param"><span class="n">param</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.Agora.val_data_check" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora.Agora.val_set_given">
+<code class="sig-name descname">val_set_given</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.agora.Agora.val_set_given" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.agora.gcp_train">
+<code class="sig-prename descclassname">agora_lib.agora.</code><code class="sig-name descname">gcp_train</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">job_dir</span></em>, <em class="sig-param"><span class="n">file_dir</span></em>, <em class="sig-param"><span class="n">gs_bucket</span></em>, <em class="sig-param"><span class="n">niter</span><span class="o">=</span><span class="default_value">5</span></em>, <em class="sig-param"><span class="n">popSize</span><span class="o">=</span><span class="default_value">24</span></em>, <em class="sig-param"><span class="n">cutoff</span><span class="o">=</span><span class="default_value">6</span></em>, <em class="sig-param"><span class="n">run_tag</span><span class="o">=</span><span class="default_value">'test'</span></em>, <em class="sig-param"><span class="n">file_dir_test</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">remove_out_Tr</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">remove_out_Val</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">rep_corr</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">average</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">read_err</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.gcp_train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.agora.local_run">
+<code class="sig-prename descclassname">agora_lib.agora.</code><code class="sig-name descname">local_run</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_dir</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">file_dir_test</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">run_tag</span><span class="o">=</span><span class="default_value">'test'</span></em>, <em class="sig-param"><span class="n">remove_out_Tr</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">remove_out_Val</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">rep_corr</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">average</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">read_err</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.local_run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.agora.main_body">
+<code class="sig-prename descclassname">agora_lib.agora.</code><code class="sig-name descname">main_body</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_dir</span></em>, <em class="sig-param"><span class="n">file_dir_test</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">remove_out_Tr</span></em>, <em class="sig-param"><span class="n">remove_out_Val</span></em>, <em class="sig-param"><span class="n">rep_corr</span></em>, <em class="sig-param"><span class="n">average</span></em>, <em class="sig-param"><span class="n">read_err</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.main_body" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.agora.prep_dirs">
+<code class="sig-prename descclassname">agora_lib.agora.</code><code class="sig-name descname">prep_dirs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">run_tag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.prep_dirs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.agora.upload_zip_to_gs">
+<code class="sig-prename descclassname">agora_lib.agora.</code><code class="sig-name descname">upload_zip_to_gs</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">gs_bucket</span></em>, <em class="sig-param"><span class="n">run_tag</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.upload_zip_to_gs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.agora.web_app_run">
+<code class="sig-prename descclassname">agora_lib.agora.</code><code class="sig-name descname">web_app_run</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">file_dir</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">file_dir_test</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">run_tag</span><span class="o">=</span><span class="default_value">'test'</span></em>, <em class="sig-param"><span class="n">remove_out_Tr</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">remove_out_Val</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">rep_corr</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">average</span><span class="o">=</span><span class="default_value">True</span></em>, <em class="sig-param"><span class="n">read_err</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">niter</span><span class="o">=</span><span class="default_value">0</span></em>, <em class="sig-param"><span class="n">popSize</span><span class="o">=</span><span class="default_value">12</span></em>, <em class="sig-param"><span class="n">cutoff</span><span class="o">=</span><span class="default_value">4</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora.web_app_run" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.agora_pipeline">
+<span id="agora-lib-agora-pipeline-module"></span><h2>agora_lib.agora_pipeline module<a class="headerlink" href="#module-agora_lib.agora_pipeline" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="agora_lib.agora_pipeline.Agora_pipeline">
+<em class="property">class </em><code class="sig-prename descclassname">agora_lib.agora_pipeline.</code><code class="sig-name descname">Agora_pipeline</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">attr</span></em>, <em class="sig-param"><span class="n">val_set_given</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">wl</span></em>, <em class="sig-param"><span class="n">rep_ids</span></em>, <em class="sig-param"><span class="n">rep_ids_val</span></em>, <em class="sig-param"><span class="n">spec_dir</span></em>, <em class="sig-param"><span class="n">model_dir</span></em>, <em class="sig-param"><span class="n">accepted_err</span></em>, <em class="sig-param"><span class="n">niter</span></em>, <em class="sig-param"><span class="n">popSize</span></em>, <em class="sig-param"><span class="n">cutoff</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora_pipeline.Agora_pipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#agora_lib.base_model.Base_model" title="agora_lib.base_model.Base_model"><code class="xref py py-class docutils literal notranslate"><span class="pre">agora_lib.base_model.Base_model</span></code></a></p>
+<dl class="py method">
+<dt id="agora_lib.agora_pipeline.Agora_pipeline.create_pop">
+<code class="sig-name descname">create_pop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora_pipeline.Agora_pipeline.create_pop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora_pipeline.Agora_pipeline.cv">
+<code class="sig-name descname">cv</code><em class="property"> = 5</em><a class="headerlink" href="#agora_lib.agora_pipeline.Agora_pipeline.cv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora_pipeline.Agora_pipeline.dev_x">
+<code class="sig-name descname">dev_x</code><em class="property"> = []</em><a class="headerlink" href="#agora_lib.agora_pipeline.Agora_pipeline.dev_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora_pipeline.Agora_pipeline.fit">
+<code class="sig-name descname">fit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ml_method</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora_pipeline.Agora_pipeline.fit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora_pipeline.Agora_pipeline.r_line">
+<code class="sig-name descname">r_line</code><em class="property"> = []</em><a class="headerlink" href="#agora_lib.agora_pipeline.Agora_pipeline.r_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora_pipeline.Agora_pipeline.rmsecv">
+<code class="sig-name descname">rmsecv</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.agora_pipeline.Agora_pipeline.rmsecv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora_pipeline.Agora_pipeline.rmsep">
+<code class="sig-name descname">rmsep</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.agora_pipeline.Agora_pipeline.rmsep" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora_pipeline.Agora_pipeline.save_figures">
+<code class="sig-name descname">save_figures</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora_pipeline.Agora_pipeline.save_figures" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.agora_pipeline.Agora_pipeline.split_data">
+<code class="sig-name descname">split_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spectra</span></em>, <em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">x_valid</span></em>, <em class="sig-param"><span class="n">y_valid</span></em>, <em class="sig-param"><span class="n">pred_idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.agora_pipeline.Agora_pipeline.split_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora_pipeline.Agora_pipeline.train_x">
+<code class="sig-name descname">train_x</code><em class="property"> = []</em><a class="headerlink" href="#agora_lib.agora_pipeline.Agora_pipeline.train_x" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.agora_pipeline.Agora_pipeline.y_pred">
+<code class="sig-name descname">y_pred</code><em class="property"> = []</em><a class="headerlink" href="#agora_lib.agora_pipeline.Agora_pipeline.y_pred" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.base_model">
+<span id="agora-lib-base-model-module"></span><h2>agora_lib.base_model module<a class="headerlink" href="#module-agora_lib.base_model" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="agora_lib.base_model.Base_model">
+<em class="property">class </em><code class="sig-prename descclassname">agora_lib.base_model.</code><code class="sig-name descname">Base_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model_name</span></em>, <em class="sig-param"><span class="n">attr</span></em>, <em class="sig-param"><span class="n">val_set_given</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">wl</span></em>, <em class="sig-param"><span class="n">rep_ids</span></em>, <em class="sig-param"><span class="n">rep_ids_val</span></em>, <em class="sig-param"><span class="n">pred_dir</span></em>, <em class="sig-param"><span class="n">pkl_dir</span></em>, <em class="sig-param"><span class="n">spec_dir</span></em>, <em class="sig-param"><span class="n">model_dir</span></em>, <em class="sig-param"><span class="n">accepted_err</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">niter</span><span class="o">=</span><span class="default_value">10</span></em>, <em class="sig-param"><span class="n">popSize</span><span class="o">=</span><span class="default_value">20</span></em>, <em class="sig-param"><span class="n">cutoff</span><span class="o">=</span><span class="default_value">4</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.base_model.Base_model" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="agora_lib.base_model.Base_model.create_pop">
+<code class="sig-name descname">create_pop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.base_model.Base_model.create_pop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.base_model.Base_model.fit">
+<code class="sig-name descname">fit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ml_method</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.base_model.Base_model.fit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.base_model.Base_model.get_results">
+<code class="sig-name descname">get_results</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.base_model.Base_model.get_results" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.base_model.Base_model.ml_model">
+<code class="sig-name descname">ml_model</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.base_model.Base_model.ml_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.base_model.Base_model.pred_idx">
+<code class="sig-name descname">pred_idx</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.base_model.Base_model.pred_idx" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.base_model.Base_model.predict">
+<code class="sig-name descname">predict</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.base_model.Base_model.predict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.base_model.Base_model.preprocess">
+<code class="sig-name descname">preprocess</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.base_model.Base_model.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.base_model.Base_model.save_figures">
+<code class="sig-name descname">save_figures</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.base_model.Base_model.save_figures" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.base_model.Base_model.save_model">
+<code class="sig-name descname">save_model</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.base_model.Base_model.save_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.base_model.Base_model.save_predictions">
+<code class="sig-name descname">save_predictions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.base_model.Base_model.save_predictions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.base_model.Base_model.split_data">
+<code class="sig-name descname">split_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spectra</span></em>, <em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">x_valid</span></em>, <em class="sig-param"><span class="n">y_valid</span></em>, <em class="sig-param"><span class="n">pred_idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.base_model.Base_model.split_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.base_model.Base_model.train">
+<code class="sig-name descname">train</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.base_model.Base_model.train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.individual">
+<span id="agora-lib-individual-module"></span><h2>agora_lib.individual module<a class="headerlink" href="#module-agora_lib.individual" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="agora_lib.individual.Individual">
+<em class="property">class </em><code class="sig-prename descclassname">agora_lib.individual.</code><code class="sig-name descname">Individual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cv</span></em>, <em class="sig-param"><span class="n">metric</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.calcFitness">
+<code class="sig-name descname">calcFitness</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spectra</span></em>, <em class="sig-param"><span class="n">Y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.calcFitness" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual.Individual.d_range">
+<code class="sig-name descname">d_range</code><em class="property"> = [0, 1, 2]</em><a class="headerlink" href="#agora_lib.individual.Individual.d_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual.Individual.fitness">
+<code class="sig-name descname">fitness</code><em class="property"> = 0</em><a class="headerlink" href="#agora_lib.individual.Individual.fitness" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.get_fitness">
+<code class="sig-name descname">get_fitness</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.get_fitness" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.get_individual">
+<code class="sig-name descname">get_individual</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.get_individual" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual.Individual.lam_range">
+<code class="sig-name descname">lam_range</code><em class="property"> = [4, 5, 6, 7, 8]</em><a class="headerlink" href="#agora_lib.individual.Individual.lam_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual.Individual.ml_method">
+<code class="sig-name descname">ml_method</code><em class="property"> = 'SVR'</em><a class="headerlink" href="#agora_lib.individual.Individual.ml_method" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual.Individual.ml_params">
+<code class="sig-name descname">ml_params</code><em class="property"> = {'C': 32.0, 'gamma': 0.015625}</em><a class="headerlink" href="#agora_lib.individual.Individual.ml_params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.mut_als_l">
+<code class="sig-name descname">mut_als_l</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.mut_als_l" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.mut_als_p">
+<code class="sig-name descname">mut_als_p</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.mut_als_p" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.mut_deriv">
+<code class="sig-name descname">mut_deriv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.mut_deriv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.mut_ml_mtd">
+<code class="sig-name descname">mut_ml_mtd</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.mut_ml_mtd" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.mut_order">
+<code class="sig-name descname">mut_order</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.mut_order" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.mut_sc">
+<code class="sig-name descname">mut_sc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.mut_sc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.mut_svr">
+<code class="sig-name descname">mut_svr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">key</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.mut_svr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.mut_window">
+<code class="sig-name descname">mut_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.mut_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.mutate">
+<code class="sig-name descname">mutate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.mutate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual.Individual.nMut">
+<code class="sig-name descname">nMut</code><em class="property"> = 1</em><a class="headerlink" href="#agora_lib.individual.Individual.nMut" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual.Individual.or_range">
+<code class="sig-name descname">or_range</code><em class="property"> = [2, 3, 4]</em><a class="headerlink" href="#agora_lib.individual.Individual.or_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual.Individual.p_range">
+<code class="sig-name descname">p_range</code><em class="property"> = [3, 5, 7, 9]</em><a class="headerlink" href="#agora_lib.individual.Individual.p_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.pls">
+<code class="sig-name descname">pls</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dspectra</span></em>, <em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">ncomp</span></em>, <em class="sig-param"><span class="n">metric</span></em>, <em class="sig-param"><span class="n">cv</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.pls" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.pls_final_result">
+<code class="sig-name descname">pls_final_result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_train</span></em>, <em class="sig-param"><span class="n">y_train</span></em>, <em class="sig-param"><span class="n">param</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.pls_final_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual.Individual.pls_range">
+<code class="sig-name descname">pls_range</code><em class="property"> = array([ 1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11, 12, 13, 14])</em><a class="headerlink" href="#agora_lib.individual.Individual.pls_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.preprocess">
+<code class="sig-name descname">preprocess</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fspec</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.rf">
+<code class="sig-name descname">rf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dspectra</span></em>, <em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">param</span></em>, <em class="sig-param"><span class="n">metric</span></em>, <em class="sig-param"><span class="n">cv</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.rf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.rf_final_result">
+<code class="sig-name descname">rf_final_result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_train</span></em>, <em class="sig-param"><span class="n">y_train</span></em>, <em class="sig-param"><span class="n">param</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.rf_final_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual.Individual.sc_range">
+<code class="sig-name descname">sc_range</code><em class="property"> = [0, 1, 2, 3]</em><a class="headerlink" href="#agora_lib.individual.Individual.sc_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.set_sim_indv">
+<code class="sig-name descname">set_sim_indv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">sim_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.set_sim_indv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.svr">
+<code class="sig-name descname">svr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dspectra</span></em>, <em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">param</span></em>, <em class="sig-param"><span class="n">metric</span></em>, <em class="sig-param"><span class="n">cv</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.svr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual.Individual.svr_C">
+<code class="sig-name descname">svr_C</code><em class="property"> = [0.5, 1.0, 2.0, 4.0, 8.0, 16.0, 32.0, 64.0, 128.0, 256.0, 512.0]</em><a class="headerlink" href="#agora_lib.individual.Individual.svr_C" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual.Individual.svr_final_result">
+<code class="sig-name descname">svr_final_result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_train</span></em>, <em class="sig-param"><span class="n">y_train</span></em>, <em class="sig-param"><span class="n">param</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual.Individual.svr_final_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual.Individual.svr_gamma">
+<code class="sig-name descname">svr_gamma</code><em class="property"> = [0.00390625, 0.0078125, 0.015625, 0.03125, 0.0625, 0.125, 0.25]</em><a class="headerlink" href="#agora_lib.individual.Individual.svr_gamma" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual.Individual.w_range">
+<code class="sig-name descname">w_range</code><em class="property"> = [5, 7, 9, 11, 13, 15, 17]</em><a class="headerlink" href="#agora_lib.individual.Individual.w_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.individual_simca">
+<span id="agora-lib-individual-simca-module"></span><h2>agora_lib.individual_simca module<a class="headerlink" href="#module-agora_lib.individual_simca" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="agora_lib.individual_simca.SIMCA_Individual">
+<em class="property">class </em><code class="sig-prename descclassname">agora_lib.individual_simca.</code><code class="sig-name descname">SIMCA_Individual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cv</span></em>, <em class="sig-param"><span class="n">metric</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.calcFitness">
+<code class="sig-name descname">calcFitness</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.calcFitness" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.cross_valid">
+<code class="sig-name descname">cross_valid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.cross_valid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.cv_test">
+<code class="sig-name descname">cv_test</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.cv_test" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.d_range">
+<code class="sig-name descname">d_range</code><em class="property"> = [0, 1]</em><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.d_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.fitness">
+<code class="sig-name descname">fitness</code><em class="property"> = 0</em><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.fitness" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.get_cv_inds">
+<code class="sig-name descname">get_cv_inds</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.get_cv_inds" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.get_fitness">
+<code class="sig-name descname">get_fitness</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.get_fitness" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.get_individual">
+<code class="sig-name descname">get_individual</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.get_individual" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.mut_deriv">
+<code class="sig-name descname">mut_deriv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.mut_deriv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.mut_order">
+<code class="sig-name descname">mut_order</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.mut_order" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.mut_sc">
+<code class="sig-name descname">mut_sc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.mut_sc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.mut_window">
+<code class="sig-name descname">mut_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.mut_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.mutate">
+<code class="sig-name descname">mutate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.mutate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.nMut">
+<code class="sig-name descname">nMut</code><em class="property"> = 1</em><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.nMut" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.or_range">
+<code class="sig-name descname">or_range</code><em class="property"> = [2, 3, 4]</em><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.or_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.preprocess">
+<code class="sig-name descname">preprocess</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fspec</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.sc_range">
+<code class="sig-name descname">sc_range</code><em class="property"> = [0, 1]</em><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.sc_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.individual_simca.SIMCA_Individual.w_range">
+<code class="sig-name descname">w_range</code><em class="property"> = [5, 7, 9, 11, 13, 15, 17]</em><a class="headerlink" href="#agora_lib.individual_simca.SIMCA_Individual.w_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.ml">
+<span id="agora-lib-ml-module"></span><h2>agora_lib.ml module<a class="headerlink" href="#module-agora_lib.ml" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="agora_lib.ml.pls">
+<code class="sig-prename descclassname">agora_lib.ml.</code><code class="sig-name descname">pls</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dspectra</span></em>, <em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">ncomp</span></em>, <em class="sig-param"><span class="n">metric</span></em>, <em class="sig-param"><span class="n">cv</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.ml.pls" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.ml.pls_final_result">
+<code class="sig-prename descclassname">agora_lib.ml.</code><code class="sig-name descname">pls_final_result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_train</span></em>, <em class="sig-param"><span class="n">y_train</span></em>, <em class="sig-param"><span class="n">param</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.ml.pls_final_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.ml.rf">
+<code class="sig-prename descclassname">agora_lib.ml.</code><code class="sig-name descname">rf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dspectra</span></em>, <em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">param</span></em>, <em class="sig-param"><span class="n">metric</span></em>, <em class="sig-param"><span class="n">cv</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.ml.rf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.ml.rf_final_result">
+<code class="sig-prename descclassname">agora_lib.ml.</code><code class="sig-name descname">rf_final_result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_train</span></em>, <em class="sig-param"><span class="n">y_train</span></em>, <em class="sig-param"><span class="n">param</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.ml.rf_final_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.ml.svr">
+<code class="sig-prename descclassname">agora_lib.ml.</code><code class="sig-name descname">svr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dspectra</span></em>, <em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">param</span></em>, <em class="sig-param"><span class="n">metric</span></em>, <em class="sig-param"><span class="n">cv</span><span class="o">=</span><span class="default_value">5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.ml.svr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.ml.svr_final_result">
+<code class="sig-prename descclassname">agora_lib.ml.</code><code class="sig-name descname">svr_final_result</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_train</span></em>, <em class="sig-param"><span class="n">y_train</span></em>, <em class="sig-param"><span class="n">param</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.ml.svr_final_result" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.pdf_gen">
+<span id="agora-lib-pdf-gen-module"></span><h2>agora_lib.pdf_gen module<a class="headerlink" href="#module-agora_lib.pdf_gen" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.add_model_selection_details">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">add_model_selection_details</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pdf</span></em>, <em class="sig-param"><span class="n">agora_obj</span></em>, <em class="sig-param"><span class="n">model_name</span></em>, <em class="sig-param"><span class="n">attr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.add_model_selection_details" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.add_raw_vs_processed">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">add_raw_vs_processed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pdf</span></em>, <em class="sig-param"><span class="n">agora_obj</span></em>, <em class="sig-param"><span class="n">model_name</span></em>, <em class="sig-param"><span class="n">attr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.add_raw_vs_processed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.add_vip_plots">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">add_vip_plots</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pdf</span></em>, <em class="sig-param"><span class="n">agora_obj</span></em>, <em class="sig-param"><span class="n">model_name</span></em>, <em class="sig-param"><span class="n">attr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.add_vip_plots" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.image_rescale">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">image_rescale</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ref_image_height</span></em>, <em class="sig-param"><span class="n">input_image_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.image_rescale" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.make_appendix_section">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">make_appendix_section</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pdf</span></em>, <em class="sig-param"><span class="n">img_list</span></em>, <em class="sig-param"><span class="n">section_title</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.make_appendix_section" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.make_pdf">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">make_pdf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">agora_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.make_pdf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.write_appendix">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">write_appendix</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pdf</span></em>, <em class="sig-param"><span class="n">agora_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.write_appendix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.write_descr_stats">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">write_descr_stats</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pdf</span></em>, <em class="sig-param"><span class="n">agora_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.write_descr_stats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.write_descr_stats_val">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">write_descr_stats_val</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pdf</span></em>, <em class="sig-param"><span class="n">agora_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.write_descr_stats_val" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.write_emsc_stats">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">write_emsc_stats</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pdf</span></em>, <em class="sig-param"><span class="n">agora_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.write_emsc_stats" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.write_emsc_stats_val">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">write_emsc_stats_val</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pdf</span></em>, <em class="sig-param"><span class="n">agora_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.write_emsc_stats_val" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.write_model_details">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">write_model_details</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pdf</span></em>, <em class="sig-param"><span class="n">agora_obj</span></em>, <em class="sig-param"><span class="n">model_name</span></em>, <em class="sig-param"><span class="n">attr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.write_model_details" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.write_nomenclature">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">write_nomenclature</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pdf</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.write_nomenclature" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.write_requestor_details">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">write_requestor_details</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">req_df</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.write_requestor_details" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.write_run_details">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">write_run_details</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pdf</span></em>, <em class="sig-param"><span class="n">agora_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.write_run_details" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.pdf_gen.write_scans">
+<code class="sig-prename descclassname">agora_lib.pdf_gen.</code><code class="sig-name descname">write_scans</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pdf</span></em>, <em class="sig-param"><span class="n">agora_obj</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pdf_gen.write_scans" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.pipeline">
+<span id="agora-lib-pipeline-module"></span><h2>agora_lib.pipeline module<a class="headerlink" href="#module-agora_lib.pipeline" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="agora_lib.pipeline.Pipeline">
+<em class="property">class </em><code class="sig-prename descclassname">agora_lib.pipeline.</code><code class="sig-name descname">Pipeline</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model_name</span></em>, <em class="sig-param"><span class="n">wl</span></em>, <em class="sig-param"><span class="n">rem_bl</span></em>, <em class="sig-param"><span class="n">lam</span></em>, <em class="sig-param"><span class="n">p</span></em>, <em class="sig-param"><span class="n">window</span></em>, <em class="sig-param"><span class="n">order</span></em>, <em class="sig-param"><span class="n">deriv</span></em>, <em class="sig-param"><span class="n">sc_method</span></em>, <em class="sig-param"><span class="n">ml_method</span></em>, <em class="sig-param"><span class="n">ml_params</span></em>, <em class="sig-param"><span class="n">fitness_cv</span></em>, <em class="sig-param"><span class="n">fitness_dev</span></em>, <em class="sig-param"><span class="n">fitness_dev_raw</span></em>, <em class="sig-param"><span class="n">ml_model</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pipeline.Pipeline" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="agora_lib.pipeline.Pipeline.get_prediction">
+<code class="sig-name descname">get_prediction</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X_df</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pipeline.Pipeline.get_prediction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.pipeline.Pipeline.predict">
+<code class="sig-name descname">predict</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">valid_spec</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pipeline.Pipeline.predict" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.pipeline.Pipeline.prep_spectra">
+<code class="sig-name descname">prep_spectra</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X_df</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pipeline.Pipeline.prep_spectra" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.pipeline.Pipeline.preprocess">
+<code class="sig-name descname">preprocess</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fspec</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.pipeline.Pipeline.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.plotting">
+<span id="agora-lib-plotting-module"></span><h2>agora_lib.plotting module<a class="headerlink" href="#module-agora_lib.plotting" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="agora_lib.plotting.best_fit_distribution">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">best_fit_distribution</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">bins</span><span class="o">=</span><span class="default_value">200</span></em>, <em class="sig-param"><span class="n">ax</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.best_fit_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Model data by finding best fit distribution to data</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.biplot_new">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">biplot_new</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">principalDf</span></em>, <em class="sig-param"><span class="n">X_df</span></em>, <em class="sig-param"><span class="n">pcnum1</span></em>, <em class="sig-param"><span class="n">pcnum2</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.biplot_new" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates biplot of 2 user selected principal components and selected scans from the spectral file</p>
+<p>arguments - 8 items</p>
+<ol class="arabic simple">
+<li><p>principalDf: the data frame from which PCs are selected</p></li>
+<li><p>X_df: spectra data as an excel file</p></li>
+<li><p>pcnum1: first user-selected principal component to plot</p></li>
+<li><p>pcnum2: second user-selected principal component to plot</p></li>
+<li><p>title: title of spectra file; agora object attribute</p></li>
+<li><p>plot_dir: directory where biplot is saved; agora object attribute</p></li>
+<li><p>pc_spec_dir1: directory where scan for pcnum1 is saved; agora object attribute</p></li>
+<li><p>pc_spec_dir2: directory where scan for pcnum2 is saved; agora object attribute</p></li>
+</ol>
+<p>returned by function - 0
+function returns null</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.conf_interval">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">conf_interval</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">data</span></em>, <em class="sig-param"><span class="n">confidence</span><span class="o">=</span><span class="default_value">0.95</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.conf_interval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.corr_plot">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">corr_plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">y_pred</span></em>, <em class="sig-param"><span class="n">y_test</span></em>, <em class="sig-param"><span class="n">attr</span></em>, <em class="sig-param"><span class="n">file_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.corr_plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.corr_plot_patent">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">corr_plot_patent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">y_pred</span></em>, <em class="sig-param"><span class="n">y_test</span></em>, <em class="sig-param"><span class="n">attr_name</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">file_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.corr_plot_patent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.corr_plot_univ">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">corr_plot_univ</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">y_pred</span></em>, <em class="sig-param"><span class="n">y_test</span></em>, <em class="sig-param"><span class="n">fitness_cv</span></em>, <em class="sig-param"><span class="n">fitness_test</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">file_dir</span></em>, <em class="sig-param"><span class="n">val_set_given</span></em>, <em class="sig-param"><span class="n">fitness_valid</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.corr_plot_univ" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.ga_scores">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">ga_scores</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">scores</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">file_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.ga_scores" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.hot_T_Q">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">hot_T_Q</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">Tsq</span></em>, <em class="sig-param"><span class="n">Tsq_conf</span></em>, <em class="sig-param"><span class="n">Q</span></em>, <em class="sig-param"><span class="n">Q_conf</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">inds</span></em>, <em class="sig-param"><span class="n">labels</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.hot_T_Q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.infl_plot">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">infl_plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x1</span></em>, <em class="sig-param"><span class="n">y1</span></em>, <em class="sig-param"><span class="n">attr_name</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.infl_plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.outlier_to_string">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">outlier_to_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">outlier_list</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.outlier_to_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.plot_PCscans">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">plot_PCscans</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">principalDf</span></em>, <em class="sig-param"><span class="n">X_df</span></em>, <em class="sig-param"><span class="n">pcnum1</span></em>, <em class="sig-param"><span class="n">pcnum2</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">pc_spec_dir1</span></em>, <em class="sig-param"><span class="n">pc_spec_dir2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.plot_PCscans" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.plot_biplot">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">plot_biplot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">principalDf</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">best_fit_int</span></em>, <em class="sig-param"><span class="n">pc_spec_dir1</span></em>, <em class="sig-param"><span class="n">pc_spec_dir2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.plot_biplot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.plot_hist">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">plot_hist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">histogram_dataframe</span></em>, <em class="sig-param"><span class="n">h_title</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">best_fit_int</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.plot_hist" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.plot_hist_new">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">plot_hist_new</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">histogram_dataframe</span></em>, <em class="sig-param"><span class="n">h_title</span></em>, <em class="sig-param"><span class="n">hist_dir</span></em>, <em class="sig-param"><span class="n">best_fit_int</span></em>, <em class="sig-param"><span class="n">distance_col_title</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.plot_hist_new" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots a histogram of the distance column of the dataframe argument</p>
+<p>arguments - 5 items</p>
+<ol class="arabic simple">
+<li><p>histogram_dataframe: dataframe containing distance column for histogram</p></li>
+<li><p>h_title: title for plot; agora object attribute</p></li>
+<li><p>plot_dir: directory where histogram will be saved; agora attribute</p></li>
+<li><p>best_fit_int: p-value for the right side of the 95% confidence interval</p></li>
+<li><p>distance_col_title: used for selection of the distance column in histogram_dataframe</p></li>
+</ol>
+<p>returned by function - 0
+function returns null</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.plot_ncomps_vs_exp_var">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">plot_ncomps_vs_exp_var</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_comps</span></em>, <em class="sig-param"><span class="n">var_exp</span></em>, <em class="sig-param"><span class="n">fig_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.plot_ncomps_vs_exp_var" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.plot_spectra">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">plot_spectra</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wl</span></em>, <em class="sig-param"><span class="n">spectra</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">font_size</span><span class="o">=</span><span class="default_value">18</span></em>, <em class="sig-param"><span class="n">colors</span><span class="o">=</span><span class="default_value">'binary'</span></em>, <em class="sig-param"><span class="n">alloutliers</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rankedoutliers</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">save_fig</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">file_dir</span><span class="o">=</span><span class="default_value">'/Users/kellihed/PAC_projects/agora_sphinx_test_2/sphinx'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.plot_spectra" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.plot_spectra_patent">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">plot_spectra_patent</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wl</span></em>, <em class="sig-param"><span class="n">spectra</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">save_fig</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">file_dir</span><span class="o">=</span><span class="default_value">'/Users/kellihed/PAC_projects/agora_sphinx_test_2/sphinx'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.plot_spectra_patent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.plot_val_curve">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">plot_val_curve</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">train_scores</span></em>, <em class="sig-param"><span class="n">test_scores</span></em>, <em class="sig-param"><span class="n">param_range</span></em>, <em class="sig-param"><span class="n">param_name</span></em>, <em class="sig-param"><span class="n">metric</span></em>, <em class="sig-param"><span class="n">ml_method</span></em>, <em class="sig-param"><span class="n">fig_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.plot_val_curve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.pred_err_plot">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">pred_err_plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">y_valid</span></em>, <em class="sig-param"><span class="n">y_pred</span></em>, <em class="sig-param"><span class="n">file_dir</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">attr_name</span></em>, <em class="sig-param"><span class="n">accepted_err</span><span class="o">=</span><span class="default_value">0.1</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.pred_err_plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.reverse_colourmap">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">reverse_colourmap</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cmap</span></em>, <em class="sig-param"><span class="n">name</span><span class="o">=</span><span class="default_value">'my_cmap_r'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.reverse_colourmap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.vip_bar">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">vip_bar</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wl</span></em>, <em class="sig-param"><span class="n">coeffs</span></em>, <em class="sig-param"><span class="n">attr_name</span></em>, <em class="sig-param"><span class="n">file_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.vip_bar" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.vip_plot">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">vip_plot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wl</span></em>, <em class="sig-param"><span class="n">x_df</span></em>, <em class="sig-param"><span class="n">coeffs</span></em>, <em class="sig-param"><span class="n">attr_name</span></em>, <em class="sig-param"><span class="n">file_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.vip_plot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.plotting.vip_plot2">
+<code class="sig-prename descclassname">agora_lib.plotting.</code><code class="sig-name descname">vip_plot2</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">wl</span></em>, <em class="sig-param"><span class="n">x_df</span></em>, <em class="sig-param"><span class="n">coeffs</span></em>, <em class="sig-param"><span class="n">attr_name</span></em>, <em class="sig-param"><span class="n">file_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.plotting.vip_plot2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.population">
+<span id="agora-lib-population-module"></span><h2>agora_lib.population module<a class="headerlink" href="#module-agora_lib.population" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="agora_lib.population.Population">
+<em class="property">class </em><code class="sig-prename descclassname">agora_lib.population.</code><code class="sig-name descname">Population</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">popSize</span></em>, <em class="sig-param"><span class="n">cutoff</span></em>, <em class="sig-param"><span class="n">x_train</span></em>, <em class="sig-param"><span class="n">y_train</span></em>, <em class="sig-param"><span class="n">cv</span></em>, <em class="sig-param"><span class="n">niter</span></em>, <em class="sig-param"><span class="n">attr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.population.Population" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="agora_lib.population.Population.cross_mut">
+<code class="sig-name descname">cross_mut</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.population.Population.cross_mut" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.population.Population.crossover">
+<code class="sig-name descname">crossover</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.population.Population.crossover" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.population.Population.cutoff">
+<code class="sig-name descname">cutoff</code><em class="property"> = 0</em><a class="headerlink" href="#agora_lib.population.Population.cutoff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.population.Population.eval_indv">
+<code class="sig-name descname">eval_indv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.population.Population.eval_indv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.population.Population.evaluate">
+<code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.population.Population.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.population.Population.evolve">
+<code class="sig-name descname">evolve</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">scores</span></em>, <em class="sig-param"><span class="n">inds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.population.Population.evolve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.population.Population.gen_new_pop">
+<code class="sig-name descname">gen_new_pop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.population.Population.gen_new_pop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.population.Population.get_pop_as_df">
+<code class="sig-name descname">get_pop_as_df</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.population.Population.get_pop_as_df" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.population.Population.individuals">
+<code class="sig-name descname">individuals</code><em class="property"> = [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]</em><a class="headerlink" href="#agora_lib.population.Population.individuals" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.population.Population.iterate">
+<code class="sig-name descname">iterate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.population.Population.iterate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.population.Population.metric">
+<code class="sig-name descname">metric</code><em class="property"> = 'neg_mean_squared_error'</em><a class="headerlink" href="#agora_lib.population.Population.metric" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.population.Population.mut_rate">
+<code class="sig-name descname">mut_rate</code><em class="property"> = 0.2</em><a class="headerlink" href="#agora_lib.population.Population.mut_rate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.population.Population.parallel_eval">
+<code class="sig-name descname">parallel_eval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.population.Population.parallel_eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.population.Population.parents">
+<code class="sig-name descname">parents</code><em class="property"> = []</em><a class="headerlink" href="#agora_lib.population.Population.parents" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.population.Population.popSize">
+<code class="sig-name descname">popSize</code><em class="property"> = 20</em><a class="headerlink" href="#agora_lib.population.Population.popSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.population.Population.push_ga_to_bq">
+<code class="sig-name descname">push_ga_to_bq</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.population.Population.push_ga_to_bq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.population.Population.score_colors">
+<code class="sig-name descname">score_colors</code><em class="property"> = [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]</em><a class="headerlink" href="#agora_lib.population.Population.score_colors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.prep">
+<span id="agora-lib-prep-module"></span><h2>agora_lib.prep module<a class="headerlink" href="#module-agora_lib.prep" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt id="agora_lib.prep.als">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">als</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">args</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.als" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.baseline_als">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">baseline_als</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">lam</span></em>, <em class="sig-param"><span class="n">p</span></em>, <em class="sig-param"><span class="n">niter</span><span class="o">=</span><span class="default_value">10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.baseline_als" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.bl_als_nir">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">bl_als_nir</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">y</span></em>, <em class="sig-param"><span class="n">lam</span></em>, <em class="sig-param"><span class="n">p</span></em>, <em class="sig-param"><span class="n">niter</span><span class="o">=</span><span class="default_value">10</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.bl_als_nir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.calculate_distances">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">calculate_distances</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">df</span></em>, <em class="sig-param"><span class="n">new_col</span></em>, <em class="sig-param"><span class="n">col_1</span></em>, <em class="sig-param"><span class="n">col_2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.calculate_distances" title="Permalink to this definition">¶</a></dt>
+<dd><p>calculate_distances runs a lambda on each row and appends to the dataframe</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.corr_rep">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">corr_rep</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X_df</span></em>, <em class="sig-param"><span class="n">Y_df</span></em>, <em class="sig-param"><span class="n">raw_spec_dir</span></em>, <em class="sig-param"><span class="n">outl_dir</span></em>, <em class="sig-param"><span class="n">title</span></em>, <em class="sig-param"><span class="n">remove_out</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.corr_rep" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.create_outlier_group">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">create_outlier_group</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">df</span></em>, <em class="sig-param"><span class="n">best_fit_int</span></em>, <em class="sig-param"><span class="n">outlr_val</span></em>, <em class="sig-param"><span class="n">stndrd_val</span></em>, <em class="sig-param"><span class="n">column_criteria</span></em>, <em class="sig-param"><span class="n">new_column</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.create_outlier_group" title="Permalink to this definition">¶</a></dt>
+<dd><p>create_outlier_group() creates a list of strings based on the outlier criteria ‘best_fit_int’</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.emsc_basic">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">emsc_basic</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spectra</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.emsc_basic" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.emsc_poly">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">emsc_poly</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spectra</span></em>, <em class="sig-param"><span class="n">degree</span></em>, <em class="sig-param"><span class="n">replicates</span></em>, <em class="sig-param"><span class="n">reference</span><span class="o">=</span><span class="default_value">0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.emsc_poly" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.make_subf">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">make_subf</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">root_dir</span></em>, <em class="sig-param"><span class="n">sub_folder</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.make_subf" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.msc">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">msc</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">input_data</span></em>, <em class="sig-param"><span class="n">reference</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.msc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform Multiplicative scatter correction</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.out_T2_Q">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">out_T2_Q</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X_test</span></em>, <em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">outl_dir</span></em>, <em class="sig-param"><span class="n">title</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.out_T2_Q" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.outlier_to_string">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">outlier_to_string</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">outlier_list</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.outlier_to_string" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.outliers_new">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">outliers_new</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X_df</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.outliers_new" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns dataframe of principal components, lists of outliers, p-values.</p>
+<p>arguments - 1 item
+X_df: spectra data as an excel file
+returned by function - 4 items</p>
+<ol class="arabic simple">
+<li><p>list_of_list_outliers: each item is a list of the index positions of outliers for a pair of PCs</p></li>
+<li><p>list_of_list_ranked_outliers: each item is a list of the index positions of outliers for a pair of PCs, but sorted according to the calculated distance.</p></li>
+<li><p>principalDf: dataframe of all principal components calculated form X_df, including distances and outlier labels</p></li>
+<li><p>list_best_fit_int: a list of the p-value for the right side of the 95% confidence interval</p></li>
+</ol>
+<p>Notes:
+The function select_df is used for pc selection; it currently requires declaration of global variables</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.outliers_old">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">outliers_old</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X_df</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.outliers_old" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.plain_outliers">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">plain_outliers</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">df</span></em>, <em class="sig-param"><span class="n">group_col</span></em>, <em class="sig-param"><span class="n">criteria</span></em>, <em class="sig-param"><span class="n">x_df_index</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.plain_outliers" title="Permalink to this definition">¶</a></dt>
+<dd><p>finds index values for the outliers to find the corresponding row labels in X_df</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.preprocess">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">preprocess</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fspec</span></em>, <em class="sig-param"><span class="n">bl</span></em>, <em class="sig-param"><span class="n">savgol</span></em>, <em class="sig-param"><span class="n">scaling</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.preprocess" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.rank_outliers">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">rank_outliers</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">df</span></em>, <em class="sig-param"><span class="n">sort_key</span></em>, <em class="sig-param"><span class="n">group_col</span></em>, <em class="sig-param"><span class="n">criteria</span></em>, <em class="sig-param"><span class="n">x_df_index</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.rank_outliers" title="Permalink to this definition">¶</a></dt>
+<dd><p>ranked_outliers(): sorts df by distance and finds index values for the outliers to find the corresponding row labels in X_df</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.remove_baseline">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">remove_baseline</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fSample</span></em>, <em class="sig-param"><span class="n">lam</span></em>, <em class="sig-param"><span class="n">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.remove_baseline" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.remove_bl_par">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">remove_bl_par</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fSample</span></em>, <em class="sig-param"><span class="n">lam</span></em>, <em class="sig-param"><span class="n">p</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.remove_bl_par" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.save_outlier_plots_new">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">save_outlier_plots_new</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X_df</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">title</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.save_outlier_plots_new" title="Permalink to this definition">¶</a></dt>
+<dd><p>runs biplot and histogram</p>
+<p>arguments - 3 items</p>
+<ol class="arabic simple">
+<li><p>X_df: spectra data as an excel file</p></li>
+<li><p>plot_dir: directory where plots are be saved; agora attribute</p></li>
+<li><p>title: title for plots; agora attribute</p></li>
+</ol>
+<p>returns - 2 items</p>
+<ol class="arabic simple">
+<li><p>all_outliers: first item of all_outliers list reuturned by outliers function</p></li>
+<li><p>ranked_outliers: first item of ranked_outliers list reuturned by outliers function</p></li>
+</ol>
+<p>Note:
+Hard-coding for items selected from outliers lists and distance column selection for histogram</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.save_outlier_plots_old">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">save_outlier_plots_old</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">X_df</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">title</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.save_outlier_plots_old" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.simca_prep">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">simca_prep</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spectra</span></em>, <em class="sig-param"><span class="n">window</span></em>, <em class="sig-param"><span class="n">order</span></em>, <em class="sig-param"><span class="n">deriv</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.simca_prep" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.prep.vip">
+<code class="sig-prename descclassname">agora_lib.prep.</code><code class="sig-name descname">vip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">model</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.prep.vip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.simca">
+<span id="agora-lib-simca-module"></span><h2>agora_lib.simca module<a class="headerlink" href="#module-agora_lib.simca" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="agora_lib.simca.SIMCA">
+<em class="property">class </em><code class="sig-prename descclassname">agora_lib.simca.</code><code class="sig-name descname">SIMCA</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">attr</span></em>, <em class="sig-param"><span class="n">val_set_given</span></em>, <em class="sig-param"><span class="n">plot_dir</span></em>, <em class="sig-param"><span class="n">wl</span></em>, <em class="sig-param"><span class="n">rep_ids</span></em>, <em class="sig-param"><span class="n">rep_ids_val</span></em>, <em class="sig-param"><span class="n">spec_dir</span></em>, <em class="sig-param"><span class="n">model_dir</span></em>, <em class="sig-param"><span class="n">accepted_err</span></em>, <em class="sig-param"><span class="n">niter</span></em>, <em class="sig-param"><span class="n">popSize</span></em>, <em class="sig-param"><span class="n">cutoff</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca.SIMCA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#agora_lib.base_model.Base_model" title="agora_lib.base_model.Base_model"><code class="xref py py-class docutils literal notranslate"><span class="pre">agora_lib.base_model.Base_model</span></code></a></p>
+<dl class="py method">
+<dt id="agora_lib.simca.SIMCA.create_pop">
+<code class="sig-name descname">create_pop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca.SIMCA.create_pop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca.SIMCA.cvIterator">
+<code class="sig-name descname">cvIterator</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.simca.SIMCA.cvIterator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca.SIMCA.fit">
+<code class="sig-name descname">fit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">ml_method</span><span class="o">=</span><span class="default_value">'PLS'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca.SIMCA.fit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca.SIMCA.plot_corr">
+<code class="sig-name descname">plot_corr</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">plot_dir</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca.SIMCA.plot_corr" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca.SIMCA.r_line">
+<code class="sig-name descname">r_line</code><em class="property"> = []</em><a class="headerlink" href="#agora_lib.simca.SIMCA.r_line" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca.SIMCA.rmsecv">
+<code class="sig-name descname">rmsecv</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.simca.SIMCA.rmsecv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca.SIMCA.rmsee">
+<code class="sig-name descname">rmsee</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.simca.SIMCA.rmsee" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca.SIMCA.rmsep">
+<code class="sig-name descname">rmsep</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.simca.SIMCA.rmsep" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca.SIMCA.save_figures">
+<code class="sig-name descname">save_figures</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca.SIMCA.save_figures" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca.SIMCA.split_data">
+<code class="sig-name descname">split_data</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spectra</span></em>, <em class="sig-param"><span class="n">Y</span></em>, <em class="sig-param"><span class="n">x_valid</span></em>, <em class="sig-param"><span class="n">y_valid</span></em>, <em class="sig-param"><span class="n">pred_idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca.SIMCA.split_data" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca.SIMCA.y_pred">
+<code class="sig-name descname">y_pred</code><em class="property"> = None</em><a class="headerlink" href="#agora_lib.simca.SIMCA.y_pred" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.simca_indv">
+<span id="agora-lib-simca-indv-module"></span><h2>agora_lib.simca_indv module<a class="headerlink" href="#module-agora_lib.simca_indv" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="agora_lib.simca_indv.SIMCA_Individual">
+<em class="property">class </em><code class="sig-prename descclassname">agora_lib.simca_indv.</code><code class="sig-name descname">SIMCA_Individual</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cv</span></em>, <em class="sig-param"><span class="n">metric</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.calcFitness">
+<code class="sig-name descname">calcFitness</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x_train</span></em>, <em class="sig-param"><span class="n">y_train</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.calcFitness" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.cross_valid">
+<code class="sig-name descname">cross_valid</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dspectra</span></em>, <em class="sig-param"><span class="n">y_train</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.cross_valid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.cv_test">
+<code class="sig-name descname">cv_test</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">params</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.cv_test" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.d_range">
+<code class="sig-name descname">d_range</code><em class="property"> = [0, 1]</em><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.d_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.fitness">
+<code class="sig-name descname">fitness</code><em class="property"> = 0</em><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.fitness" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.get_cv_inds">
+<code class="sig-name descname">get_cv_inds</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">dspectra</span></em>, <em class="sig-param"><span class="n">y_train</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.get_cv_inds" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.get_fitness">
+<code class="sig-name descname">get_fitness</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.get_fitness" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.get_individual">
+<code class="sig-name descname">get_individual</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.get_individual" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.mut_deriv">
+<code class="sig-name descname">mut_deriv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.mut_deriv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.mut_order">
+<code class="sig-name descname">mut_order</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.mut_order" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.mut_sc">
+<code class="sig-name descname">mut_sc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.mut_sc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.mut_window">
+<code class="sig-name descname">mut_window</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.mut_window" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.mutate">
+<code class="sig-name descname">mutate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.mutate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.nMut">
+<code class="sig-name descname">nMut</code><em class="property"> = 1</em><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.nMut" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.or_range">
+<code class="sig-name descname">or_range</code><em class="property"> = [2, 3, 4]</em><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.or_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.sc_range">
+<code class="sig-name descname">sc_range</code><em class="property"> = [0, 3]</em><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.sc_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca_indv.SIMCA_Individual.w_range">
+<code class="sig-name descname">w_range</code><em class="property"> = [5, 7, 9, 11, 13, 15, 17]</em><a class="headerlink" href="#agora_lib.simca_indv.SIMCA_Individual.w_range" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.simca_pop">
+<span id="agora-lib-simca-pop-module"></span><h2>agora_lib.simca_pop module<a class="headerlink" href="#module-agora_lib.simca_pop" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="agora_lib.simca_pop.Population">
+<em class="property">class </em><code class="sig-prename descclassname">agora_lib.simca_pop.</code><code class="sig-name descname">Population</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">popSize</span></em>, <em class="sig-param"><span class="n">cutoff</span></em>, <em class="sig-param"><span class="n">x_train</span></em>, <em class="sig-param"><span class="n">y_train</span></em>, <em class="sig-param"><span class="n">cv</span></em>, <em class="sig-param"><span class="n">niter</span></em>, <em class="sig-param"><span class="n">attr</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_pop.Population" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="agora_lib.simca_pop.Population.cross_mut">
+<code class="sig-name descname">cross_mut</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_pop.Population.cross_mut" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_pop.Population.crossover">
+<code class="sig-name descname">crossover</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_pop.Population.crossover" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca_pop.Population.cutoff">
+<code class="sig-name descname">cutoff</code><em class="property"> = 0</em><a class="headerlink" href="#agora_lib.simca_pop.Population.cutoff" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_pop.Population.eval_indv">
+<code class="sig-name descname">eval_indv</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_pop.Population.eval_indv" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_pop.Population.evaluate">
+<code class="sig-name descname">evaluate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_pop.Population.evaluate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_pop.Population.evolve">
+<code class="sig-name descname">evolve</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">scores</span></em>, <em class="sig-param"><span class="n">inds</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_pop.Population.evolve" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_pop.Population.gen_new_pop">
+<code class="sig-name descname">gen_new_pop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_pop.Population.gen_new_pop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_pop.Population.get_pop_as_df">
+<code class="sig-name descname">get_pop_as_df</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_pop.Population.get_pop_as_df" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca_pop.Population.individuals">
+<code class="sig-name descname">individuals</code><em class="property"> = [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]</em><a class="headerlink" href="#agora_lib.simca_pop.Population.individuals" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_pop.Population.iterate">
+<code class="sig-name descname">iterate</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_pop.Population.iterate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca_pop.Population.metric">
+<code class="sig-name descname">metric</code><em class="property"> = 'neg_mean_squared_error'</em><a class="headerlink" href="#agora_lib.simca_pop.Population.metric" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca_pop.Population.mut_rate">
+<code class="sig-name descname">mut_rate</code><em class="property"> = 0.2</em><a class="headerlink" href="#agora_lib.simca_pop.Population.mut_rate" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_pop.Population.parallel_eval">
+<code class="sig-name descname">parallel_eval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_pop.Population.parallel_eval" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca_pop.Population.parents">
+<code class="sig-name descname">parents</code><em class="property"> = []</em><a class="headerlink" href="#agora_lib.simca_pop.Population.parents" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca_pop.Population.popSize">
+<code class="sig-name descname">popSize</code><em class="property"> = 20</em><a class="headerlink" href="#agora_lib.simca_pop.Population.popSize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.simca_pop.Population.push_ga_to_bq">
+<code class="sig-name descname">push_ga_to_bq</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">x</span></em>, <em class="sig-param"><span class="n">y</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.simca_pop.Population.push_ga_to_bq" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="agora_lib.simca_pop.Population.score_colors">
+<code class="sig-name descname">score_colors</code><em class="property"> = [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]</em><a class="headerlink" href="#agora_lib.simca_pop.Population.score_colors" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib.testing">
+<span id="agora-lib-testing-module"></span><h2>agora_lib.testing module<a class="headerlink" href="#module-agora_lib.testing" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="agora_lib.testing.TestAgora">
+<em class="property">class </em><code class="sig-prename descclassname">agora_lib.testing.</code><code class="sig-name descname">TestAgora</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">methodName</span><span class="o">=</span><span class="default_value">'runTest'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.TestAgora" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt id="agora_lib.testing.TestAgora.test_glucose_train_only">
+<code class="sig-name descname">test_glucose_train_only</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.TestAgora.test_glucose_train_only" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.testing.TestAgora.test_glucose_train_valid">
+<code class="sig-name descname">test_glucose_train_valid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.TestAgora.test_glucose_train_valid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.testing.TestAgora.test_only_train_full">
+<code class="sig-name descname">test_only_train_full</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.TestAgora.test_only_train_full" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.testing.TestAgora.test_only_train_rep_ids_average">
+<code class="sig-name descname">test_only_train_rep_ids_average</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.TestAgora.test_only_train_rep_ids_average" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.testing.TestAgora.test_only_train_rep_ids_not_average">
+<code class="sig-name descname">test_only_train_rep_ids_not_average</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.TestAgora.test_only_train_rep_ids_not_average" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.testing.TestAgora.test_only_train_short">
+<code class="sig-name descname">test_only_train_short</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.TestAgora.test_only_train_short" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="agora_lib.testing.TestAgora.test_train_validate_offlineDoe">
+<code class="sig-name descname">test_train_validate_offlineDoe</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.TestAgora.test_train_validate_offlineDoe" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.testing.local_run_on_model">
+<code class="sig-prename descclassname">agora_lib.testing.</code><code class="sig-name descname">local_run_on_model</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">train_file_dir</span></em>, <em class="sig-param"><span class="n">val_file_dir</span><span class="o">=</span><span class="default_value">''</span></em>, <em class="sig-param"><span class="n">run_tag</span><span class="o">=</span><span class="default_value">'unit_test_'</span></em>, <em class="sig-param"><span class="n">rep_corr</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">average</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">model</span><span class="o">=</span><span class="default_value">'ga'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.local_run_on_model" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.testing.run_glucose_train_only">
+<code class="sig-prename descclassname">agora_lib.testing.</code><code class="sig-name descname">run_glucose_train_only</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.run_glucose_train_only" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.testing.run_glucose_train_valid">
+<code class="sig-prename descclassname">agora_lib.testing.</code><code class="sig-name descname">run_glucose_train_valid</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.run_glucose_train_valid" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.testing.run_only_train">
+<code class="sig-prename descclassname">agora_lib.testing.</code><code class="sig-name descname">run_only_train</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.run_only_train" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.testing.run_only_train_full_simca">
+<code class="sig-prename descclassname">agora_lib.testing.</code><code class="sig-name descname">run_only_train_full_simca</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span><span class="o">=</span><span class="default_value">'simca'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.run_only_train_full_simca" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.testing.run_only_train_rep_ids_average">
+<code class="sig-prename descclassname">agora_lib.testing.</code><code class="sig-name descname">run_only_train_rep_ids_average</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.run_only_train_rep_ids_average" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.testing.run_only_train_rep_ids_not_average">
+<code class="sig-prename descclassname">agora_lib.testing.</code><code class="sig-name descname">run_only_train_rep_ids_not_average</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.run_only_train_rep_ids_not_average" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.testing.run_only_train_two_attrs">
+<code class="sig-prename descclassname">agora_lib.testing.</code><code class="sig-name descname">run_only_train_two_attrs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.run_only_train_two_attrs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.testing.run_train_val_rep_ids_average">
+<code class="sig-prename descclassname">agora_lib.testing.</code><code class="sig-name descname">run_train_val_rep_ids_average</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.run_train_val_rep_ids_average" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.testing.run_train_val_rep_ids_simca">
+<code class="sig-prename descclassname">agora_lib.testing.</code><code class="sig-name descname">run_train_val_rep_ids_simca</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">model</span><span class="o">=</span><span class="default_value">'simca'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.run_train_val_rep_ids_simca" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="agora_lib.testing.run_train_validate_offlineDoe">
+<code class="sig-prename descclassname">agora_lib.testing.</code><code class="sig-name descname">run_train_validate_offlineDoe</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#agora_lib.testing.run_train_validate_offlineDoe" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+<div class="section" id="module-agora_lib">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-agora_lib" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Agora</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">agora_lib</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">agora_lib package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">agora_lib</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">agora_lib</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, DK.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.1.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/agora_lib.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
