@@ -19,6 +19,8 @@ def image_rescale(ref_image_height, input_image_dir):
 
 
 def write_requestor_details(req_df):
+    """ Writes out details of the requestor """
+
     header_image = os.getenv('HEADER_IMG_PATH', 'header/Report_Noodles.png')
     header_text = str(req_df.iloc[0, 1]) + "_" + str(datetime.datetime.now())
 
@@ -98,6 +100,8 @@ def write_requestor_details(req_df):
 
 
 def write_run_details(pdf, agora_obj):
+    """ Pulls out details from the Agora object """
+
     # Effective page width, or just epw
     epw = pdf.w - 2 * pdf.l_margin
 
